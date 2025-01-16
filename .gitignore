@@ -172,3 +172,5 @@ cython_debug/
 
 # confidential data
 .json
+.csv
+
