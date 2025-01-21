@@ -101,7 +101,7 @@ if __name__ == "__main__":
 
         # Define collection details
         collection_name = "test_collection"  # Replace with your collection name
-        num_rows = 20  # Number of rows to insert
+        num_rows = 40  # Number of rows to insert
         vector_dim = 128  # Vector dimension (must match the collection schema)
 
         # Insert data

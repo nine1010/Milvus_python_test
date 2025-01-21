@@ -32,7 +32,7 @@ def create_collection(collection_name, vector_dim):
 
     # Define schema for the collection
     field1 = FieldSchema(name="id", dtype=DataType.INT64, is_primary=True)
-    field2 = FieldSchema(name="name", dtype=DataType.VARCHAR, max_length=20)
+    field2 = FieldSchema(name="name", dtype=DataType.VARCHAR, max_length=100)
     field3 = FieldSchema(name="embedding", dtype=DataType.FLOAT_VECTOR, dim=vector_dim)
     schema = CollectionSchema(fields=[field1, field2, field3], description=f"Schema for {collection_name}")
 

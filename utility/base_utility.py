@@ -1,5 +1,5 @@
-from pymilvus import connections, utility
 import os
+from pymilvus import connections
 from dotenv import load_dotenv
 
 # Load environment variables from .env
@@ -24,4 +24,4 @@ def close_connection(alias="default"):
     Close the connection to the Milvus database.
     """
     connections.disconnect(alias=alias)
-    print(f"Disconnected from Milvus.")
+    print("Disconnected from Milvus.")

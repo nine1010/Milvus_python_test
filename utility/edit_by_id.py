@@ -1,5 +1,5 @@
 from pymilvus import Collection, utility
-from delete_collection import delete_by_id
+from delete_by_id import delete_by_id
 from base_utility import open_connection, close_connection
 
 

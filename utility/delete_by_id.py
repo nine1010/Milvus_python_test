@@ -28,9 +28,12 @@ if __name__ == "__main__":
     try:
         open_connection()
 
-        # Define the collection name and IDs to delete
-        collection_name = "example_collection"  # Replace with your collection name
-        ids_to_delete = [2, 3]  # Replace with the list of IDs you want to delete
+        # Define the collection name
+        collection_name = input("Enter the collection name: ")
+
+        # Input the IDs to delete
+        ids_to_delete = input("Enter the IDs to delete (comma-separated): ")
+        ids_to_delete = list(map(int, ids_to_delete.split(",")))
 
         # Delete the entities by ID
         delete_by_id(collection_name, ids_to_delete)
